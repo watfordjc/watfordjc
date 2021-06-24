@@ -41,3 +41,21 @@ My [**Live Streaming Control project**](https://github.com/users/watfordjc/proje
 My [**Data Backups and Archiving project**](https://github.com/users/watfordjc/projects/2) is for backing up and archiving data. As well as a Wiki containing thoughts on how I'd achieve that, it includes repositories for LTO tape storage and encryption.
 
 My [**EditableCMD project**](https://github.com/users/watfordjc/projects/3) is for my command prompt wrapper with editable output and plugin support.
+
+## Code Signing
+
+My GitHub commits are normally signed using GPG key ```0xBF09A195A052493F80975092380852F8F6CE9235```, although there are some instances where I use the GitHub Web interface resulting in GitHub's GPG key ```0x5DE3E0509C47EA3CF04A42D34AEE18F83AFDEB23``` being used instead.
+
+I do use other GPG keys for commit-signing and code-signing, but these are unlikely to be used on GitHub. Most of my GPG keys are signed by my master signing key, ```0xAE04BA84CDC96DD4F2B3D1EB4EEB0C689DE6BB74```.
+
+My Debian packages and commits, including those that are Ubuntu-compatible, are signed using GPG key ```0xB67D120BDA498C2C66959B031CBF612DBBE5DE6F```.
+
+My Ubuntu packages and commits are signed with key ```0xA9AE7BD699B94178F4B89F8C8C5E2CC1D6498FBA```. My Ubuntu PPAs are signed by Launchpad using key ```0x0C7F9AD49DD1D9D38D4387DF9C80A534D162C034```.
+
+Commits and packages relating to my infrastructure may be signed by my GPG key for hostmaster (DNS) purposes, ```0x9677EA855262A4ECA14D9B21990D7896239C495E```.
+
+My Windows builds are signed using my own certificate authority infrastructure.
+
+The root certificate authority is [**John Cook UK Root CA**](certs/JohnCookUK.crt) (```.crt```), the current intermediate used is **John Cook UK Code Signing CA**, and my current code-signing certificate is **John Cook**.
+
+My Android APKs are currently signed using app signing keys that I control. This may change if I start using Play App Signing for an app, such as if I want to use app bundles.
